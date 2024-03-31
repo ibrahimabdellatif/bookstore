@@ -7,7 +7,7 @@ import org.springframework.data.annotation.Id;
 @Table(name = "author")
 public class Author {
     @jakarta.persistence.Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "author_id", nullable = false)
     private int authorId;
     @Column(name = "author_name")

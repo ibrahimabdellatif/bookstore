@@ -1,7 +1,6 @@
 package com.ibrahim.bookstore.service;
 
 import com.ibrahim.bookstore.model.Author;
-import com.ibrahim.bookstore.model.Book;
 import com.ibrahim.bookstore.repository.AuthorRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;

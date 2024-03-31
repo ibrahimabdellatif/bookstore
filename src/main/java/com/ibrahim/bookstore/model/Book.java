@@ -2,14 +2,12 @@ package com.ibrahim.bookstore.model;
 
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
-
 
 @Entity
 @Table(name = "book")
 public class Book {
     @jakarta.persistence.Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "book_id", nullable = false)
     private Long id;
 

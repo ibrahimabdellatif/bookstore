@@ -1,13 +1,12 @@
 package com.ibrahim.bookstore.model;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
 
 @Entity
 @Table(name = "book_section")
-public class BookSections {
+public class Section {
     @jakarta.persistence.Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "section_id", nullable = false)
     private Long sectionId;
     @Column(name = "section_name")
